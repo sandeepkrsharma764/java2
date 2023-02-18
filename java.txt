@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class SumFiveIntegers {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int sum = 0;
+
+        System.out.println("Enter five integers:");
+
+        for (int i = 1; i <= 5; i++) {
+            System.out.printf("Enter integer %d: ", i);
+            int num = scanner.nextInt();
+            sum += num;
+        }
+
+        System.out.printf("The sum of the five integers is %d", sum);
+    }
+}
+Here's how the program works:
+
+The program imports the Scanner class from the java.util package to read input from the user.
+The program initializes a variable sum to zero to store the sum of the integers.
+
